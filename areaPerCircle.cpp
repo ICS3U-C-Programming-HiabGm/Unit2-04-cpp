@@ -5,9 +5,6 @@
 #include <iostream>
 
 int main() {
-    // Define PI as a constant
-    const double PI = 3.14159265358979323846;
-
     // Declare variables
     float radius, circumference, area;
 
@@ -16,8 +13,8 @@ int main() {
     std::cin >> radius;
 
     // Calculate the circumference and area
-    circumference = 2 * PI * radius; // Circumference = 2 * π * r
-    area = PI * pow(radius, 2); // Area = π * r^2
+    circumference = 2 * M_PI * radius; // Circumference = 2 * π * r
+    area = M_PI * pow(radius, 2); // Area = π * r^2
 
     // Display the circumference and area
     std::cout << "\nCircumference = " << circumference << " mm" << std::endl;
